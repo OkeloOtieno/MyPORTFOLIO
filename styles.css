@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: grey;
+    color: black; 
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+  }
+  
+  
+  /* Header Styles */
+  header {
+    background-color: rgb(27, 5, 71); 
+    color: #fff;
+    
+    padding: 20px;
+    width: auto; 
+    display: flex; 
+    align-items: center;
+    text-align: center; 
+  }
+  
+  header h1 {
+    margin: 0; 
+    flex: 1;
+    font-size: 100px;
+  }
+  
+  header img {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+    margin: -20px;
+    margin-right: 20px;
+  }
+  
+  /* Navigation Styles */
+  nav {
+    background-color: #e0e0e0;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0px;
+    display: flex; 
+    justify-content: center; 
+  }
+  nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+  }
+  nav a{
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  nav a:hover{
+    color: blue;
+  }
+  nav li {
+    margin-right: 20px; 
+  }
+  .nav-item.a:active {
+    color: red;
+    font-weight: bold;
+  }
+  
+
+  /* Main Content Styles */
+  main {
+    padding: 20px;
+    background-image: url(./img/kevin-canlas-gGzslLWItqM-unsplash.jpg);
+  }
+  
+  div {
+    margin-bottom: 20px;
+    box-shadow: 5px 10px gray;
+  }
+  div ol {
+    margin-left: 8%;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+    text-decoration: underline; 
+    padding-top: 40px;
+  }
+  
+  p {
+    line-height: 1.5;
+    width: 88%;
+    margin-left: 10%;
+    
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: rgb(27, 5, 71); 
+    color: #fff; 
+    padding: 10px 20px; 
+    text-align: center; 
+  }
+  
+  footer a {
+    color: #fff; 
+    margin-right: 10px;
+  }
+  
+  footer a:hover {
+    text-decoration: underline; 
+    color: red;
+  }
+  #spirit-animal img{
+    width: 98%;
+    height: 400px;
+  }
+    /* Media Queries */
+    @media (max-width: 768px) {
+      nav {
+        position: static;
+        top: 0; 
+      }
+      
+      nav ul {
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+      }
+      
+      nav li {
+        margin-right: 0; 
+        margin-bottom: 10px; 
+      }
+      header h1 {
+        font-size: 30px;
+      }
+      
+      header img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      header {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+      }
+      
+      header h1 {
+        font-size: 10px; 
+      }
+    }
+   
+  
