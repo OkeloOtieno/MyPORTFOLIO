@@ -79,13 +79,14 @@ body {
   
   div {
     margin-bottom: 20px;
-    box-shadow: 5px 10px gray;
+    box-shadow: 5px 10px rgb(27, 5, 71);
   }
   div ol {
     margin-left: 8%;
   }
   
   h2 {
+    margin-left: 20px;
     margin-bottom: 10px;
     text-decoration: underline; 
     padding-top: 40px;
@@ -97,6 +98,32 @@ body {
     margin-left: 10%;
     
   }
+  /*Button Styles*/
+  button{
+    background-color: #b0c2bb;
+    border: solid;
+    color: black;
+    padding: 15px 32px;
+    margin-left: 42%;
+    margin-bottom: 1%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+  }
+  button:hover {
+    cursor: pointer;
+    background-color:rgb(27, 5, 71) ; 
+    color: white;
+  }
+  /*Progress Bar Styles*/
+  .progress-bar {
+    height: 25px;  
+    background-color: #ccc;  
+    background-image: linear-gradient(to right, #007bff, #007bff);  
+  }
+  
   
   /* Footer Styles */
   footer {
@@ -155,6 +182,10 @@ body {
       
       header h1 {
         font-size: 10px; 
+      }
+      button{
+        display: inline-block;
+        margin-left: 0%;
       }
     }
    
